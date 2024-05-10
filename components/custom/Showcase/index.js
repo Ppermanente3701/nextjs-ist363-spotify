@@ -14,6 +14,7 @@ const Showcase = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [albums, setAlbums] = useState([]);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [relatedArtists, setRelatedArtists] = useState([]);
 
   useEffect(() => {
     //console.log("use effect for showcase");
@@ -60,6 +61,7 @@ const Showcase = ({ items }) => {
             activeIndex={activeIndex}
             albums={albums}
             setIsExpanded={setIsExpanded}
+            relatedArtists={relatedArtists}
           />
         )}
       </AnimatePresence>
