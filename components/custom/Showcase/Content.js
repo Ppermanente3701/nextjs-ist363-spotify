@@ -73,6 +73,10 @@ const ShowcaseContent = ({
             >
               {items[activeIndex].name}
             </motion.h2>
+            <br></br>
+            <span className={styles.showcase__counter}>
+              Rating : {items[activeIndex].popularity}/100
+            </span>
           </Col>
         </Row>
         <Row paddingBottom={2} paddingTop={2} borderTop={1}>

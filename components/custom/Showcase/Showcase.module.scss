@@ -42,6 +42,7 @@
     }
     @include mixins.breakpoint(laptop) {
       width: 60vw;
+      height: calc(60vw * (9 / 16));
       position: absolute;
       top: 7rem;
       left: 50%;
